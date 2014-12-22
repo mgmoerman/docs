@@ -83,9 +83,10 @@ This works in sort of the same way as the Checker Conditions. It uses the same l
 That last exception allows for more specific filtering, for example, you would want to match against all sensor classes (sensor_class) that are of type “state”, but when that nets you to many results, you can add a match for it’s description (sensor_descr), or you’d want to match all ports of type (ifType) ethernetCsmacd, but you only want certain ones with a specific description (ifAlias).
 
 
-<font color='red'>If you scrolled down here to just copy/paste some alert-checkers, perfectly fine, but don’t complain if they don’t work, PLEASE read how these work above.</font>
 
 ### Example alerts
+
+<font color='red'>If you scrolled down here to just copy/paste some alert-checkers, perfectly fine, but don’t complain if they don’t work, PLEASE read how these work above.</font>
 
 The following is a set of very useful alert checkers:
 
@@ -117,9 +118,10 @@ The following is a set of very useful alert checkers:
     <tr><td>device_duration_poll</td><td>in seconds</td></tr>
    
 	<tr><th>Attributes</th><th>Values</th></tr>
-    <tr><td>hostname</td><td>Derived through SNMP</td></tr>
-    <tr><td>os</td><td>Derived through SNMP</td></tr>
-    <tr><td>type</td><td>network,server,workstation,storage,...</td></tr>
+    <tr><td>hostname</td><td>Self explanatory, this is the hostname for the device</td></tr>
+    <tr><td>os</td><td>cisco,asa,junos,linux,printer, generic, etc.
+For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></tr>
+    <tr><td>type</td><td>network,server,workstation,storage,voip,firewall</td></tr>
     <tr><td>sysName</td><td>Derived through SNMP</td></tr>
     <tr><td>sysDescr</td><td>Derived through SNMP</td></tr>
     <tr><td>sysContact</td><td>Derived through SNMP</td></tr>
