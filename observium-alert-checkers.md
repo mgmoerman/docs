@@ -70,14 +70,20 @@ A single line consists of three values:
 
 #### Associations
 
-In this pane you'll create the associations, in other words, which subset of the entity type you selected  needs alerting based on the conditions specified in the previous pane. When initially creating an alert checker, it allows for ony 1 association rule. Once it's added, you can later on add more associations to it. This works in sort of the same way as the Checker Conditions, with some exceptions:
+In these input fields you’ll create the first association rule, in other words, which subset of the entity type you selected needs alerting based on the conditions specified in the previous pane. When initially creating an alert checker, it allows for ony 1 association rule. Once it’s added, you can later on add more association rules to it.
 
-* instead of using metrics, you're using the attributes
-* for a single device match, you can have multiple entity matches
+These association rules are made from a “device association” and an “entity association”. First input field you’ll do your device matching, based on the attributes for devices. Second input field you’ll do your entity matching, using the attributes for the entity type you want to associate it with (this can off course be different then the condition you’re checking for)
 
-That last exception allows for even more specific filtering, for example, you would want to match against all sensor classes (sensor_class) that are of type "state", but when that nets you to many results, you can add a match for it's description (sensor_descr), or you'd want to match all ports of type (ifType) ethernetCsmacd, but you only want certain ones with a specific description (ifAlias)
+This works in sort of the same way as the Checker Conditions. It uses the same line method (metric,test,value), however with some exceptions:
 
-Take note that if you want to match multiple times for the same attributes (multiple ifAlias for example), create multiple association entries. 
+*  instead of using metrics, you’ll be using attributes
+*  you can’t use a device attribute twice in the same association rule, so for example multiple “hostname match bla” statements with in the same association rule won’t work
+*  for a single device association line, you can have multiple entity association lines
+
+That last exception allows for more specific filtering, for example, you would want to match against all sensor classes (sensor_class) that are of type “state”, but when that nets you to many results, you can add a match for it’s description (sensor_descr), or you’d want to match all ports of type (ifType) ethernetCsmacd, but you only want certain ones with a specific description (ifAlias).
+
+
+<font color='red'>If you scrolled down here to just copy/paste some alert-checkers, perfectly fine, but don’t complain if they don’t work, PLEASE read how these work above.</font>
 
 ### Example alerts
 
