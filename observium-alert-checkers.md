@@ -204,13 +204,13 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
-    <tr><td>bgpPeerState</td><td>established</td></tr>
-    <tr><td>bgpPeerAdminStatus</td><td></td></tr>
-    <tr><td>bgpPeerFsmEstablishedTime</td><td></td></tr>
+    <tr><td>bgpPeerState</td><td>idle, connect, active, opensent, openconfirm, established</td></tr>
+    <tr><td>bgpPeerAdminStatus</td><td>stop, start</td></tr>
+    <tr><td>bgpPeerFsmEstablishedTime</td><td>returns seconds the peer is live</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>as_text</td><td></td></tr>
-    <tr><td>bgpPeerRemoteAs</td><td></td></tr>
-    <tr><td>bgpPeerRemoteAddr</td><td></td></tr>
+    <tr><td>bgpPeerRemoteAs</td><td>AS number of the remote peer</td></tr>
+    <tr><td>bgpPeerRemoteAddr</td><td>IP address of the remote peer</td></tr>
     <tr><td>bgpPeerLocalAddr</td><td></td></tr>
     <tr><td>bgpPeerIdentifier</td><td></td></tr>
 </table>
