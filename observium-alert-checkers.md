@@ -255,9 +255,9 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
-    <tr><td>vsvr_state</td><td></td></tr>
-    <tr><td>vsvr_bps_in</td><td></td></tr>
-    <tr><td>vsvr_bps_out</td><td></td></tr>
+    <tr><td>vsvr_state</td><td>up, down, outOfService</td></tr>
+    <tr><td>vsvr_bps_in</td><td>bits/sec in</td></tr>
+    <tr><td>vsvr_bps_out</td><td>bits/sec out</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>vsvr_name</td><td>Name of the vserver - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
     <tr><td>vsvr_fullname</td><td>Name of the vserver</td></tr>
@@ -273,9 +273,9 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
-    <tr><td>svc_state</td><td></td></tr>
-    <tr><td>svc_bps_in</td><td></td></tr>
-    <tr><td>svc_bps_out</td><td></td></tr>
+    <tr><td>svc_state</td><td>up, down, outOfService</td></tr>
+    <tr><td>svc_bps_in</td><td>bits/sec in</td></tr>
+    <tr><td>svc_bps_out</td><td>bits/sec out</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>svc_name</td><td>Name of the service - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
     <tr><td>svc_fullname</td><td>Name of the service</td></tr>
