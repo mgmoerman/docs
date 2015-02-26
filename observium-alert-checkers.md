@@ -98,7 +98,7 @@ The following is a set of very useful alert checkers:
 | Device down                             | Device      | device_status equals 0                                                 | ANY                      |            * | *                                      |
 | Processor usage is above 80%            | Processor   | processor_usage greater 80                                             | ALL                      |            * | processor_descr match *processor*      |
 | Memory usage is above 70%               | Memory      | mempool_perc greater 70                                                | ALL                      |            * | *                                      |
-| State sensor is in ALERT state!         | Sensor      | sensor_event equals alert                                              | ANY                      | *            | sensor_class equals state              |
+| State sensor is in ALERT state!         | Status      | status_event = alert status_event = warning                                             | ANY                      | *            |*              |
 | Fanspeed is above or under treshold     | Sensor      | sensor_value greater @sensor_limit sensor_value less @sensor_limit_low | ANY                      | *            | sensor_class equals fanspeed           |
 | Traffic exceeds 85%                     | Port        | ifInOctets_perc ge 85 ifOutOctets_perc ge 85                           | ANY                      | *            | ifType equals ethernetCsmacd           |
 | BGP Session down                        | BGP Peer    | bgpPeerState notequals established                                     | ANY                      | *            | bgpPeerRemoteAs equals 41552           |
@@ -229,6 +229,18 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>poller_type</td><td>possible types: snmp, agent, ipmi</td></tr>
 </table>
 
+#### Status
+
+<table>
+	<tr><th>Metrics</th><th>Values</th></tr>
+    <tr><td>status_value</td><td>number</td></tr>
+    <tr><td>status_event</td><td>up, warning, alert, down</td></tr>
+	<tr><th>Attributes</th><th>Values</th></tr>
+    <tr><td>status_descr</td><td>Description</td></tr>
+    <tr><td>status_type</td><td></td></tr>
+    <tr><td>status_index</td><td></td></tr>
+    <tr><td>status_oid</td><td>SNMP OID</td></tr>
+</table>
 
 #### Toner
 <table>
