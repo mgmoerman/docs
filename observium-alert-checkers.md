@@ -222,6 +222,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
     <tr><td>sensor_value</td><td>number</td></tr>
+    <tr><td>sensor_event</td><td>Status of the sensor compared to the thresholds configured on the sensor</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>sensor_descr</td><td></td></tr>
     <tr><td>sensor_class</td><td>voltage, current, power, frequency, humidity, fanspeed, temperature, dbm, state</td></tr>
