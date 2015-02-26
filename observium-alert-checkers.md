@@ -218,6 +218,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 
 #### Sensor
 
+
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
     <tr><td>sensor_value</td><td>number</td></tr>
@@ -239,8 +240,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>status_descr</td><td>Description</td></tr>
     <tr><td>status_type</td><td>Device & code specific - only for custom things</td></tr>
-    <tr><td>status_index</td><td></td></tr>
-    <tr><td>status_oid</td><td>SNMP OID</td></tr>
+    <tr><td>status_index</td><td>just index in the table, not really useful for alerting</td></tr>
+    <tr><td>status_oid</td><td>SNMP OID - basically don't use</td></tr>
 </table>
 
 #### Toner
