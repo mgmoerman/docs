@@ -185,8 +185,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>processor_oid</td><td></td></tr>
  </table>
 
-####Storage
 
+####Storage
 
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
