@@ -34,6 +34,7 @@ These are the ones that are available as of 12/12/2014:
 * Toner
 * Port
 * Sensor
+* Status
  
 They kinda speak for them selves, if you want alerts on things that go on with ports, pick
 ports, if you want something that has to do with a sensor, pick that one. Device is a very 
