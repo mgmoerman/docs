@@ -259,8 +259,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>vsvr_bps_in</td><td></td></tr>
     <tr><td>vsvr_bps_out</td><td></td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
-    <tr><td>vsvr_name</td><td>this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
-    <tr><td>vsvr_fullname</td><td></td></tr>
+    <tr><td>vsvr_name</td><td>Name of the vserver - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
+    <tr><td>vsvr_fullname</td><td>Name of the vserver</td></tr>
     <tr><td>vsvr_label</td><td></td></tr>
     <tr><td>vsvr_ip</td><td></td></tr>
     <tr><td>vsvr_ipv6</td><td></td></tr>
@@ -277,8 +277,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>svc_bps_in</td><td></td></tr>
     <tr><td>svc_bps_out</td><td></td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
-    <tr><td>svc_name</td><td>this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
-    <tr><td>svc_fullname</td><td></td></tr>
+    <tr><td>svc_name</td><td>Name of the service - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
+    <tr><td>svc_fullname</td><td>Name of the service</td></tr>
     <tr><td>svc_label</td><td></td></tr>
     <tr><td>svc_ip</td><td></td></tr>
     <tr><td>svc_port</td><td></td></tr>
