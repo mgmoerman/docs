@@ -235,7 +235,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
     <tr><td>status_value</td><td>number</td></tr>
-    <tr><td>status_event</td><td>up, warning, alert, down</td></tr>
+    <tr><td>status_event</td><td>up, warning, alert, down, standalone</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>status_descr</td><td>Description</td></tr>
     <tr><td>status_type</td><td></td></tr>
