@@ -184,7 +184,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>processor_descr</td><td></td></tr>
     <tr><td>processor_type</td><td></td></tr>
     <tr><td>processor_oid</td><td></td></tr>
- </table>
+</table>
 
 
 ####Storage
