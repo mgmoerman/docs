@@ -81,7 +81,7 @@ These association rules are made from a “device association” and an “entit
 This works in sort of the same way as the Checker Conditions. It uses the same line method (metric,test,value), however with some exceptions:
 
 *  instead of using metrics, you’ll be using attributes
-*  you can’t use a device attribute twice in the same association rule, so for example multiple “hostname match bla” statements with in the same association rule won’t work
+*  you can’t use a device attribute twice in the same association rule, so for example multiple “hostname match bla” statements with in the same association rule won’t work. You will need to add multiple association rules.
 *  for a single device association line, you can have multiple entity association lines
 
 That last exception allows for more specific filtering, for example, you would want to match against all sensor classes (sensor_class) that are of type “state”, but when that nets you to many results, you can add a match for it’s description (sensor_descr), or you’d want to match all ports of type (ifType) ethernetCsmacd, but you only want certain ones with a specific description (ifAlias).
