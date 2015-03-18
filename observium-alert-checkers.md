@@ -143,7 +143,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>rx_ave_pktsize & tx_ave_pktsize</td><td></td></tr>
     <tr><td>ifOperStatus</td><td>up/down</td></tr>
     <tr><td>ifAdminStatus</td><td>up/down</td></tr>
-    <tr><td>ifSpeed</td><td>interface speed derived through SNMP in mbit</td></tr>
+    <tr><td>ifSpeed</td><td>interface speed derived through SNMP in 32bit counter (mbit)</td></tr>
+    <tr><td>ifHighSpeed</td><td>interface speed derived through SNMP in 64bit counter (mbit), use this one for 10G and higher</td></tr>
     <tr><td>ifMtu</td><td>number</td></tr>
     <tr><td>ifDuplex</td><td>full/half</td></tr>
    
