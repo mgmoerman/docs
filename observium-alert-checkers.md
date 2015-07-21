@@ -238,6 +238,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 	<tr><th>Metrics</th><th>Values</th></tr>
     <tr><td>status_value</td><td>number</td></tr>
     <tr><td>status_event</td><td>up, warning, alert, down</td></tr>
+    <tr><td>status_name_uptime</td><td>state uptime in seconds (current unixtime - last changed unixtime)</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>status_descr</td><td>Description</td></tr>
     <tr><td>status_type</td><td>Device & code specific - only for custom things</td></tr>
