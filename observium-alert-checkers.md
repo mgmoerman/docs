@@ -223,7 +223,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
     <tr><td>sensor_value</td><td>number</td></tr>
-    <tr><td>sensor_event</td><td>Status of the sensor compared to the thresholds configured on the sensor</td></tr>
+    <tr><td>sensor_event</td><td>status of the sensor compared to the thresholds configured on the sensor</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>sensor_descr</td><td></td></tr>
     <tr><td>sensor_class</td><td>voltage, current, power, frequency, humidity, fanspeed, temperature, dbm, state</td></tr>
@@ -240,8 +240,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>status_event</td><td>up, warning, alert, down</td></tr>
     <tr><td>status_name_uptime</td><td>state uptime in seconds (current unixtime - last changed unixtime)</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
-    <tr><td>status_descr</td><td>Description</td></tr>
-    <tr><td>status_type</td><td>Device & code specific - only for custom things</td></tr>
+    <tr><td>status_descr</td><td>description</td></tr>
+    <tr><td>status_type</td><td>device & code specific - only for custom things</td></tr>
     <tr><td>status_index</td><td>just index in the table, not really useful for alerting</td></tr>
     <tr><td>status_oid</td><td>SNMP OID - basically don't use</td></tr>
 </table>
@@ -254,6 +254,30 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>toner_descr</td><td></td></tr>
 </table>
 
+
+####IP SLA
+
+<table>
+	<tr><th>Metrics</th><th>Values</th></tr>
+    <tr><td>rtt_value</td><td>last returned roundtrip time (rtt) in miliseconds</td></tr>
+    <tr><td>rtt_sense</td><td>returned status (for example 'ok') d,evice specific</td></tr>
+    <tr><td>rtt_sense_uptime</td><td>bits/sec out</td></tr>
+    <tr><td>rtt_event</td><td>ok/warning/alert</td></tr>
+    <tr><td>rtt_minimum</td><td>minimum measured packets</td></tr>
+    <tr><td>rtt_maximum</td><td>maximum measured packets</td></tr>
+    <tr><td>rtt_success</td><td>succesfully measured packets</td></tr>
+    <tr><td>rtt_loss</td><td>lost measured packets</td></tr>
+ 	<tr><th>Attributes</th><th>Values</th></tr>
+    <tr><td>sla_index</td><td>just anindex in the table, not really useful for alerting</td></tr>
+    <tr><td>sla_owner</td><td>the device configured SNMP owner of this IP SLA operation</td></tr>
+    <tr><td>sla_tag</td><td>an on the device, user-specified identifier for an IP SLAs operation</td></tr>
+    <tr><td>sla_graph</td><td>echo/jitter</td></tr>
+    <tr><td>sla_status</td><td>always active,not really useful for alerting </td></tr>
+    <tr><td>rtt_type</td><td>echo/jitter/icmpjitter/dns/http/ftp</td></tr>
+
+</table>
+
+
 ####Netscaler vServers
 
 <table>
@@ -262,8 +286,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>vsvr_bps_in</td><td>bits/sec in</td></tr>
     <tr><td>vsvr_bps_out</td><td>bits/sec out</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
-    <tr><td>vsvr_name</td><td>Name of the vserver - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
-    <tr><td>vsvr_fullname</td><td>Name of the vserver</td></tr>
+    <tr><td>vsvr_name</td><td>tame of the vserver - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
+    <tr><td>vsvr_fullname</td><td>name of the vserver</td></tr>
     <tr><td>vsvr_label</td><td></td></tr>
     <tr><td>vsvr_ip</td><td></td></tr>
     <tr><td>vsvr_ipv6</td><td></td></tr>
@@ -280,8 +304,8 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>svc_bps_in</td><td>bits/sec in</td></tr>
     <tr><td>svc_bps_out</td><td>bits/sec out</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
-    <tr><td>svc_name</td><td>Name of the service - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
-    <tr><td>svc_fullname</td><td>Name of the service</td></tr>
+    <tr><td>svc_name</td><td>name of the service - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
+    <tr><td>svc_fullname</td><td>name of the service</td></tr>
     <tr><td>svc_label</td><td></td></tr>
     <tr><td>svc_ip</td><td></td></tr>
     <tr><td>svc_port</td><td></td></tr>
