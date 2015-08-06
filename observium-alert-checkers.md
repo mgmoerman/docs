@@ -133,6 +133,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>sysName</td><td>Derived through SNMP</td></tr>
     <tr><td>sysDescr</td><td>Derived through SNMP</td></tr>
     <tr><td>sysContact</td><td>Derived through SNMP</td></tr>
+    <tr><td>Location</td><td>The translated location how it appears in Observium (not the SNMP value)</td></tr>
     <tr><td>hardware</td><td>Derived through SNMP</td></tr>
     <tr><td>serial</td><td>Derived through SNMP</td></tr>
 </table>
