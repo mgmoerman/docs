@@ -33,6 +33,7 @@ These are the ones that are available as of 12/12/2014:
 * Netscaler vServer
 * Netscaler Service
 * Toner
+* IP SLA
 * Port
 * Sensor
 * Status
@@ -105,7 +106,7 @@ The following is a set of very useful alert checkers:
 | Traffic exceeds 85%                     | Port        | ifInOctets_perc ge 85 ifOutOctets_perc ge 85                           | ANY                      | *            | ifType equals ethernetCsmacd           |
 | BGP Session down                        | BGP Peer    | bgpPeerState notequals established                                     | ANY                      | *            | bgpPeerRemoteAs equals 41552           |
 | Storage exceeds 85% of disk capacity    | Storage     | storage_perc ge 85                                                     | ANY                      | *            | storage_type equals hrStorageFixedDisk |
-| Port has encountered errors or discards | Port        | ifInErrors_rate gt 1 ifOutErrors_rate gt 1                             | ANY                      | *            | ifType equals ethernetCsmacd           |
+| Port has encountered errors or discards | Port        | ifInErrors_rate gt 0 ifOutErrors_rate gt 0                             | ANY                      | *            | ifType equals ethernetCsmacd           |
 | Port is enabled, but operationally down | Port        | ifAdminStatus equals up ifOperStatus notequals up                      | ALL                      | *            | ifType equals ethernetCsmacd           |
 
 
