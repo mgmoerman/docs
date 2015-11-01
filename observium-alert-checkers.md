@@ -85,8 +85,8 @@ A single line consists of three values:
 | gt        | greater then            | metric **gt** numbervalue                        |
 | equals    | equals                  | metric **equals** numbervalue/text               |
 | notequals | notequals               | metric **notequals** numbervalue/tet             |
-| match     | match with wildcard     | metric **match** text* / metric **match** *text / metric **match** \*text\* |
-|match     | not match with wildcard  | metric **notmatch** text* / metric **notmatch** *text / metric **notmatch** \*text\* |
+| match     | match with wildcard     | metric **match** text\* / metric **match** \*text / metric **match** \*text\* |
+|match     | not match with wildcard  | metric **notmatch** text\* / metric **notmatch** \*text / metric **notmatch** \*text\* |
 | in        | in a list               | metric **in** 1,2,3,4,5 / metric **in** bla,blabla,blablabla       |
 | in        | not in a list           | metric **notin** 1,2,3,4,5 / metric **notin** bla,blabla,blablabla       |
 
