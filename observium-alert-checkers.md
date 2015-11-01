@@ -71,8 +71,24 @@ These need to be single lined entries, you can put as much in there if you want 
 A single line consists of three values:
 
 * the actual metric 
-* a "test" (le, ge, lt, gt, ne, match and notmatch)
+* a "test" (le, ge, lt, gt, ne, match, notmatch, in, notin)
 * a value
+
+
+##### Syntax of checker condition"
+
+| test      | meaning                 |                                           syntax |
+|-----------|-------------------------|--------------------------------------------------|
+| le        | less or equals          | metric **le** numbervalue                        |
+| ge        | greater or equals       | metric **ge** numbervalue                        |
+| lt        | less then               | metric **lt** numbervalue                        |
+| gt        | greater then            | metric **gt** numbervalue                        |
+| equals    | equals                  | metric **equals** numbervalue/text               |
+| notequals | notequals               | metric **notequals** numbervalue/tet             |
+| match     | match with wildcard     | metric **match** text* / metric **match** *text / metric **match** \*text\* |
+|match     | not match with wildcard  | metric **notmatch** text* / metric **notmatch** *text / metric **notmatch** \*text\* |
+| in        | in a list               | metric **in** 1,2,3,4,5 / metric **in** bla,blabla,blablabla       |
+| in        | not in a list           | metric **notin** 1,2,3,4,5 / metric **notin** bla,blabla,blablabla       |
 
 #### Associations
 
