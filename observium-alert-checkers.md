@@ -77,18 +77,20 @@ A single line consists of three values:
 
 ##### Syntax of checker condition / entity matches:
 
-| test      | meaning                 |                                                                              syntax    |
-|-----------|-------------------------|----------------------------------------------------------------------------------------|
-| le        | less or equals          | metric **le** numbervalue                                                              |
-| ge        | greater or equals       | metric **ge** numbervalue                                                              |
-| lt        | less then               | metric **lt** numbervalue                                                              |
-| gt        | greater then            | metric **gt** numbervalue                                                              |
-| equals    | equals                  | metric **equals** numbervalue/text                                                     |
-| notequals | notequals               | metric **notequals** numbervalue/tet                                                   |
-| match     | match with wildcard     | metric **match** text\* / metric **match** \*text / metric **match** \*text\*          |
-| notmatch  | not match with wildcard | metric **notmatch** text\* / metric **notmatch** \*text / metric **notmatch** \*text\* |
-| in        | in a list               | metric **in** 1,2,3,4,5 / metric **in** bla,blabla,blablabla                           |
-| notin     | not in a list           | metric **notin** 1,2,3,4,5 / metric **notin** bla,blabla,blablabla                     | 
+| test      | alternate                    |meaning                  |                                                                              syntax    |
+|-----------|------------------------------|-------------------------|----------------------------------------------------------------------------------------|
+| le        | <=                           | less or equals          | metric **le** numbervalue                                                              |
+| ge        | >=                           | greater or equals       | metric **ge** numbervalue                                                              |
+| lt        | less, <                      | less then               | metric **lt** numbervalue                                                              |
+| gt        | greater,  >                  | greater then            | metric **gt** numbervalue                                                              |
+| equals    | eq, is, ==, =                | equals                  | metric **equals** numbervalue/text                                                     |
+| notequals | isnot, ne, !=                | notequals               | metric **notequals** numbervalue/tet                                                   |
+| match     | matches                      | match with wildcard     | metric **match** text\* / metric **match** \*text / metric **match** \*text\*  <br><br>You can use ? or \* as wildcard, in the code this is creating SQL and ? gets replaced with . , an asterisk (\*) is replaced with .\*       |
+| notmatch  | notmatches, !match           | not match with wildcard | metric **notmatch** text\* / metric **notmatch** \*text / metric **notmatch** \*text\*  <br><br>You can use ? or \* as wildcard, in the code this is creating SQL and ? gets replaced with . , an asterisk (\*) is replaced with .\*   |
+| regexp    | regex                        | match for regular expression          | metric regexp \<regex\>                                                  |
+| notregexp | notregex, !regexp, !regex    | do not match for regular expression       | metric notregexp \<regex\>                                           |
+| in        | list                         | in a list               | metric **in** 1,2,3,4,5 / metric **in** bla,blabla,blablabla                           |
+| notin     | !in, !list, notin, notlist   | not in a list           | metric **notin** 1,2,3,4,5 / metric **notin** bla,blabla,blablabla                     | 
 
 ##### note that in/notin is only available from observium r7149
 
