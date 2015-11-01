@@ -75,7 +75,7 @@ A single line consists of three values:
 * a value
 
 
-##### Syntax of checker condition
+##### Syntax of checker condition / entity matches:
 
 | test      | meaning                 |                                                                              syntax    |
 |-----------|-------------------------|----------------------------------------------------------------------------------------|
