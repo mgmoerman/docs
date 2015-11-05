@@ -87,8 +87,8 @@ A single line consists of three values:
 | notequals | isnot, ne, !=                | notequals               | metric **notequals** numbervalue/tet                                                   |
 | match     | matches                      | match with wildcard     | metric **match** text\* / metric **match** \*text / metric **match** \*text\*  <br><br>You can use ? or \* as wildcard, in the code this is creating SQL and ? gets replaced with . , an asterisk (\*) is replaced with .\*       |
 | notmatch  | notmatches, !match           | not match with wildcard | metric **notmatch** text\* / metric **notmatch** \*text / metric **notmatch** \*text\*  <br><br>You can use ? or \* as wildcard, in the code this is creating SQL and ? gets replaced with . , an asterisk (\*) is replaced with .\*   |
-| regexp    | regex                        | match for regular expression          | metric regexp \<regex\>                                                  |
-| notregexp | notregex, !regexp, !regex    | do not match for regular expression       | metric notregexp \<regex\>                                           |
+| regexp    | regex                        | match for regular expression          | metric **regexp** \<regex\>                                                  |
+| notregexp | notregex, !regexp, !regex    | do not match for regular expression       | metric **notregexp** \<regex\>                                           |
 | in        | list                         | in a list               | metric **in** 1,2,3,4,5 / metric **in** bla,blabla,blablabla                           |
 | notin     | !in, !list, notin, notlist   | not in a list           | metric **notin** 1,2,3,4,5 / metric **notin** bla,blabla,blablabla                     | 
 
