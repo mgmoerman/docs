@@ -224,7 +224,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>storage_used</td><td></td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>storage_descr</td><td></td></tr>
-    <tr><td>storage_type</td><td></td></tr>
+    <tr><td>storage_type</td><td>These are the type as known in HOST-RESOURCES-TYPES: hrStorageOther, hrStorageRam, hrStorageVirtualMemory, hrStorageFixedDisk, hrStorageRemovableDisk, hrStorageFloppyDisk, hrStorageCompactDisc, hrStorageRamDisk, hrStorageFlashMemory, hrStorageNetworkDisk</td></tr>
     <tr><td>storage_mib</td><td></td></tr>
     <tr><td>storage_index</td><td></td></tr>
 </table>
