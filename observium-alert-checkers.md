@@ -249,10 +249,10 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
-    <tr><td>sensor_value</td><td>number</td></tr>
+    <tr><td>sensor_value</td><td>number, or @sensor_limit / @sensor_limit_low, these last 2 are the min/max values as calculated/derived from snmp/set in the sensor properties of the device</td></tr>
     <tr><td>sensor_event</td><td>status of the sensor compared to the thresholds configured on the sensor</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
-    <tr><td>sensor_descr</td><td></td></tr>
+    <tr><td>sensor_descr</td><td>Description of the sensor as reported by the device</td></tr>
     <tr><td>sensor_class</td><td>voltage, current, power, frequency, humidity, fanspeed, temperature, dbm, state</td></tr>
     <tr><td>sensor_type</td><td></td></tr>
     <tr><td>sensor_index</td><td></td></tr>
@@ -340,6 +340,27 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>svc_name</td><td>name of the service - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
     <tr><td>svc_fullname</td><td>name of the service</td></tr>
+    <tr><td>svc_label</td><td></td></tr>
+    <tr><td>svc_ip</td><td></td></tr>
+    <tr><td>svc_port</td><td></td></tr>
+    <tr><td>svc_type</td><td></td></tr>
+</table>
+
+####Netscaler Service Group Members (works the same as Netscaler Services)
+
+<table>
+	<tr><th>Metrics</th><th>Values</th></tr>
+    <tr><td>svc_state</td><td>up, down, outOfService</td></tr>
+    <tr><td>svc_bps_in</td><td>bits/sec in</td></tr>
+    <tr><td>svc_bps_out</td><td>bits/sec out</td></tr>
+    <tr><td>svc_conn_active</td><td>number of active connections</td></tr>
+    <tr><td>svc_trans_active</td><td>number of active transactions</td></tr>
+    <tr><td>svc_trans_avgtime</td><td>average transaction time in miliseconds</td></tr>
+    <tr><td>svc_svr_avgttfb</td><td>average time to first byte in miliseconds</td></tr>
+    <tr><td>svc_conn_client</td><td>number of client connections</td></tr>
+	<tr><th>Attributes</th><th>Values</th></tr>
+    <tr><td>svc_name</td><td>name of the servicegroup member - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
+    <tr><td>svc_fullname</td><td>name of the servicegroup member</td></tr>
     <tr><td>svc_label</td><td></td></tr>
     <tr><td>svc_ip</td><td></td></tr>
     <tr><td>svc_port</td><td></td></tr>
