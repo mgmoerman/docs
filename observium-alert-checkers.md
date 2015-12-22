@@ -199,7 +199,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>mempool_descr</td><td></td></tr>
     <tr><td>mempool_mib</td><td></td></tr>
-    <tr><td>mempool_index</td><td></td></tr>
+    <tr><td>mempool_index</td><td>just index in the table, not really useful for alerting, unless you know what you're doing, and what you want to get out of it</td></tr>
 </table>
 
 #### Processor
@@ -226,7 +226,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>storage_descr</td><td></td></tr>
     <tr><td>storage_type</td><td>These are the type as known in HOST-RESOURCES-TYPES: hrStorageOther, hrStorageRam, hrStorageVirtualMemory, hrStorageFixedDisk, hrStorageRemovableDisk, hrStorageFloppyDisk, hrStorageCompactDisc, hrStorageRamDisk, hrStorageFlashMemory, hrStorageNetworkDisk</td></tr>
     <tr><td>storage_mib</td><td></td></tr>
-    <tr><td>storage_index</td><td></td></tr>
+    <tr><td>storage_index</td><td>just index in the table, not really useful for alerting, unless you know what you're doing, and what you want to get out of it</td></tr>
 </table>
 
 ####BGP Peer
@@ -255,7 +255,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>sensor_descr</td><td>Description of the sensor as reported by the device</td></tr>
     <tr><td>sensor_class</td><td>voltage, current, power, frequency, humidity, fanspeed, temperature, dbm, state</td></tr>
     <tr><td>sensor_type</td><td></td></tr>
-    <tr><td>sensor_index</td><td></td></tr>
+    <tr><td>sensor_index</td><td>just index in the table, not really useful for alerting, unless you know what you're doing, and what you want to get out of it</td></tr>
     <tr><td>poller_type</td><td>possible types: snmp, agent, ipmi</td></tr>
 </table>
 
@@ -269,7 +269,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>status_descr</td><td>description</td></tr>
     <tr><td>status_type</td><td>device & code specific - only for custom things</td></tr>
-    <tr><td>status_index</td><td>just index in the table, not really useful for alerting</td></tr>
+    <tr><td>status_index</td><td>just index in the table, not really useful for alerting, unless you know what you're doing, and what you want to get out of it</td></tr>
     <tr><td>status_oid</td><td>SNMP OID - basically don't use</td></tr>
 </table>
 
