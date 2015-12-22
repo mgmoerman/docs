@@ -23,7 +23,7 @@ Let's go through the steps that are involved to actually create/add an alert che
 #### Entity type
 First of all when you create an alert,you'll need to pick the 'entity' type for what you are building the alert for. An entity type is nothing more than a "thing" for which you would like to see alerts.
 
-These are the ones that are available as of 12/12/2014:
+These are the ones that are available as of 22/12/2015:
 
 * Device
 * Memory
@@ -37,6 +37,14 @@ These are the ones that are available as of 12/12/2014:
 * Port
 * Sensor
 * Status
+* P2P Radio
+* WiFi WLAN *
+* Wifi_radio *
+
+###### * these ones are not documented yet
+
+###### Netscaler Servicegroup entities are not merged into the codebase yet, but once they are, the details for attributes & metrics are as described below
+
  
 They kinda speak for them selves, if you want alerts on things that go on with ports, pick
 ports, if you want something that has to do with a sensor, pick that one. Device is a very 
