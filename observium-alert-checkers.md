@@ -39,8 +39,8 @@ These are the ones that are available as of 22/12/2015:
 * Sensor
 * Status
 * P2P Radio
-* WiFi WLAN *
-* Wifi_radio *
+* WiFi WLAN **
+* Wifi_radio **
 
 ###### * Netscaler Servicegroup entities are not merged into the codebase yet, but once they are, the details for attributes & metrics are as described below
 
