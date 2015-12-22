@@ -32,6 +32,7 @@ These are the ones that are available as of 22/12/2015:
 * BGP Peer
 * Netscaler vServer
 * Netscaler Service
+* Netscaler Servicegroups *
 * Toner
 * IP SLA
 * Port
@@ -41,9 +42,9 @@ These are the ones that are available as of 22/12/2015:
 * WiFi WLAN *
 * Wifi_radio *
 
-###### * these ones are not documented yet
+###### * Netscaler Servicegroup entities are not merged into the codebase yet, but once they are, the details for attributes & metrics are as described below
 
-###### Netscaler Servicegroup entities are not merged into the codebase yet, but once they are, the details for attributes & metrics are as described below
+###### ** these ones are not documented yet
 
  
 They kinda speak for them selves, if you want alerts on things that go on with ports, pick
