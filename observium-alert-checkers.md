@@ -161,6 +161,7 @@ This is my own interpretation of the metrics & attributes, Adam Armstrong has no
     <tr><td>os</td><td>cisco,asa,junos,linux,printer, generic, etc.
 For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></tr>
     <tr><td>type</td><td>network,server,workstation,storage,voip,firewall</td></tr>
+    <tr><td>purpose</td><td>The description of the device (can be found in device settings)</td></tr>
     <tr><td>sysName</td><td>Derived through SNMP</td></tr>
     <tr><td>sysDescr</td><td>Derived through SNMP</td></tr>
     <tr><td>sysContact</td><td>Derived through SNMP</td></tr>
