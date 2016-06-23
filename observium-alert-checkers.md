@@ -1,5 +1,4 @@
-[link_obs_alert_checker]: http://www.observium.org/wiki/Creating_an_Alert_Checker
-[link_obs_alerting_metrics]: http://www.observium.org/wiki/Alerting_Metrics_and_Attributes
+[link_obs_alert_checker]: http://www.observium.org/docs/alert_checker/
 [link_obs_attribs_metrics]: http://www.observium.org/docs/attribs_metrics/
 
 ##Useful Observium Alert Checkers
@@ -11,7 +10,7 @@ unfortunate, as you need to figure out how it works by trial and error.
 There is some documentation on the Observium site itself, which is useful to read:
 
 *   [Creating_an_Alert_Checker][link_obs_alert_checker]
-*   [Alerting_Metrics_and_Attributes][link_obs_alerting_metrics]
+*   [Alerting_Metrics_and_Attributes][link_obs_attribs_metrics]
  
  
 Observium has a very powerful way of using entity types & check conditions to do alerting. 
