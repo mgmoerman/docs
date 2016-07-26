@@ -154,6 +154,7 @@ This is my own interpretation of the metrics & attributes, Adam Armstrong has no
     <tr><td>device_snmp</td><td>response in ms</td></tr>
     <tr><td>device_uptime</td><td>in seconds</td></tr>
     <tr><td>device_duration_poll</td><td>in seconds</td></tr>
+    <tr><td>device_rebooted</td><td>0 or 1</td></tr>
    
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>hostname</td><td>Self explanatory, this is the hostname for the device</td></tr>
