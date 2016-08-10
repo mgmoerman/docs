@@ -53,11 +53,11 @@ There are many online resources to help you learn and test regular expressions. 
 
 A simple rule to match the word "duplicate" could look like:
 
-```/duplicate/```
+<code>/duplicate/</code>
 
 A more complex rule to match SSH authentication failures from PAM for the users root or adama might look like:
 
-```/pam.+\(sshd:auth\).+failure.+user\=(root|adama)/ ```
+<code>/pam.+\(sshd:auth\).+failure.+user\=(root|adama)/</code>
 
 
 ### Useful syslog alerts
