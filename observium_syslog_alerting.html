@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Observium SYSLOG alerting</title>
+
+</head>
+<body>
+<h2>Observium SYSLOG alerting</h2>
+
+<p>Observium has builtin syslog alerting since release r7970. This text will explain on what it does, how it works, and how you configure it.</p>
+
+<p>Something that was missing in the entity based alerting system, is now fixed with this brand new feature of Observium.</p>
+
+<p>You can now perform realtime alerting where as the conventional entity based alerting only would trigger every 5 minutes, because it is poller based.</p>
+
+<p>Now this new feature is not going to replace the existing entity alerting, as it just serves a different purpose, as it just allows you to catch issues from your devices, which are not possible to catch with the existing entity based alerting system. Examples are: Duplicate IPs/MAC addresses, or OSPF messages.</p>
+
+<p>Syslog alerting allows you to send out notifications from syslog messages that are produced by your devices. You can match on those with Regular Expressions</p>
+
+<p>Syslog alerting in observium perfectly integrates with the existing contact system, so it allows you to notify via the usual channels, E-mail, Slack, Pagerduty, XMPP, webhook, etc.</p>
+
+<p>For a complete overview of transport methods, see: <a href="http://www.observium.org/docs/alerting_transports/">Alerting Transports</a></p>
+
+<h3>How to set it up</h3>
+
+<p>First make sure you have configured syslog to integrate with Observium. The documentation for doing this, can be found here: <a href="http://www.observium.org/docs/syslog/">Syslog Integration</a></p>
+
+<p>If you are running r7970 or later you will find 2 new entries in the global menu:</p>
+
+<ul>
+<li>Syslog Alerts</li>
+<li>Syslog Rules</li>
+</ul>
+
+
+<p><img src="http://www.maartenmoerman.nl/screenshots/e8c53ef8e1030a2a83ecbffa.png" alt="screenshot1" /></p>
+
+<p>Let's start with creating a useful syslog alert rule, that triggers an alert when there is a duplicate mac address found on a Cisco device:</p>
+
+<ul>
+<li>First click on "Syslog Rules" in the global menu</li>
+<li>Then click on "Add Syslog Rule"</li>
+</ul>
+
+
+<p><img src="http://www.maartenmoerman.nl/screenshots/34b076950eed0f290c4b524c.png" alt="screenshot2" /></p>
+
+<p>You will then presented with the following screen, where you have to configure the details of the syslog alert rule:</p>
+
+<ul>
+<li>Rule Name: This defines the name for the actual rule, this is just an administrative reference</li>
+<li>Message: This is the message that will end up in the notification send out</li>
+<li>Regular Expression: This is where you configure the actual rule to match syslog content against</li>
+</ul>
+
+
+<p><img src="http://www.maartenmoerman.nl/screenshots/a8893b6b623cb9f01be4a0d3.png" alt="screenshot3" /></p>
+
+<p>Syslog Rules are built using standard PCRE regular expressions.</p>
+
+<p>There are many online resources to help you learn and test regular expressions. Good resources include regex101.com, Debuggex Cheatsheet, regexr.com and Tutorials Point. There are many other sites with examples which can be found online.</p>
+
+<p>A simple rule to match the word "duplicate" could look like:</p>
+
+<p><code>/duplicate/</code></p>
+
+<p>A more complex rule to match SSH authentication failures from PAM for the users root or adama might look like:</p>
+
+<p><code>/pam.+\(sshd:auth\).+failure.+user\=(root|adama)/</code></p>
+
+<h3>Useful syslog alerts</h3>
+
+<p>Here are a couple of alerts you could implement which come in pretty handy:</p>
+
+<p><img src="http://www.maartenmoerman.nl/screenshots/f2a82a874df5cf9b8d26a39c.png" alt="screenshot4" /></p>
+
+<h3>Sending out notifications</h3>
+
+<p>To actually send out notifications, you will have to associate the syslog alert rule with the contact. To do this, edit the contact that you have configured and add the syslog rule association:
+<img src="http://www.maartenmoerman.nl/screenshots/bcfdb8b29fdc99892a28b24c.png" alt="screenshot5" /></p>
+
+<p>Select from the drop down a syslog alert rule, and click "+ Associate". Once you have done this, the association is completed</p>
+
+<p>If you associate it to an email contact, the notification will look like this:</p>
+
+<p><img src="http://www.maartenmoerman.nl/screenshots/65df301565c86c9614864447.png" alt="screenshot5" /></p>
+</body>
+</html>
