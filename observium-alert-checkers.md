@@ -173,7 +173,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
 #### Port
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
-    <tr><td>ifInOctets_rate & ifOutOctets_rate</td><td>number</td></tr>
+    <tr><td>ifInOctets_rate & ifOutOctets_rate</td><td>number, octet = 8, so this is bytes (Bps)</td></tr>
     <tr><td>ifInOctets_perc & ifOutOctets_perc</td><td>0-100 percentage</td></tr>
     <tr><td>ifInUcastPkts_rate & ifOutUcastPkts_rate</td><td>number</td></tr>
     <tr><td>ifInErrors_rate & ifOutErrors_rate</td><td>number</td></tr>
