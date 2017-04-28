@@ -158,8 +158,7 @@ This is my own interpretation of the metrics & attributes, Adam Armstrong has no
     <tr><td>device_uptime</td><td>in seconds</td></tr>
     <tr><td>device_duration_poll</td><td>in seconds</td></tr>
     <tr><td>device_rebooted</td><td>0 or 1</td></tr>
-   
-	<tr><th>Attributes</th><th>Values</th></tr>
+   	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>hostname</td><td>Self explanatory, this is the hostname for the device</td></tr>
     <tr><td>os</td><td>cisco,asa,junos,linux,printer, generic, etc.
 For an up-to-date list see the os.inc.php in your includes-definition directory of your observium installation</td></tr>
