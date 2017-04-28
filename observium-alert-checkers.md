@@ -100,7 +100,6 @@ A single line consists of three values:
 | in        | list                         | in a list               | metric **in** 1,2,3,4,5 / metric **in** bla,blabla,blablabla                           |
 | notin     | !in, !list, notin, notlist   | not in a list           | metric **notin** 1,2,3,4,5 / metric **notin** bla,blabla,blablabla                     | 
 
-##### note that in/notin is only available from observium r7149
 
 
 #### Associations
@@ -121,7 +120,9 @@ That last exception allows for more specific filtering, for example, you would w
 
 ### Example alerts
 
+<html>
 <font color='red'>If you scrolled down here to just copy/paste some alert-checkers, perfectly fine, but don’t complain if they don’t work, PLEASE read how these work above.</font>
+</html>
 
 The following is a set of very useful alert checkers:
 
