@@ -162,7 +162,7 @@ This is my own interpretation of the metrics & attributes, Adam Armstrong has no
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>hostname</td><td>Self explanatory, this is the hostname for the device</td></tr>
     <tr><td>os</td><td>cisco,asa,junos,linux,printer, generic, etc.
-For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></tr>
+For an up-to-date list see the os.inc.php in your includes-definition directory of your observium installation</td></tr>
     <tr><td>type</td><td>network,server,workstation,storage,voip,firewall</td></tr>
     <tr><td>purpose</td><td>The description of the device (can be found in device settings)</td></tr>
     <tr><td>sysName</td><td>Derived through SNMP</td></tr>
