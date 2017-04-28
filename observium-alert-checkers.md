@@ -140,12 +140,14 @@ The following is a set of very useful alert checkers:
 
 
 
+
 ###Per entity overview of Attributes , Metrics and their values (if any)
 
 This is my own interpretation of the metrics & attributes, Adam Armstrong has now (writing this on 31 july 2015) updated the documentation on the observium website as well: [http://www.observium.org/docs/attribs_metrics/][link_obs_attribs_metrics]
 
 
 #### Device
+
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
     <tr><td>device_status</td><td>0 = down, 1 = up</td></tr>
