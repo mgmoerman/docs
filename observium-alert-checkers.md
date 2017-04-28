@@ -186,8 +186,7 @@ For an up-to-date list see the os.inc.php in your includes-definition directory 
     <tr><td>ifHighSpeed</td><td>interface speed derived through SNMP in 64bit counter (mbit), use this one for 10G and higher</td></tr>
     <tr><td>ifMtu</td><td>number</td></tr>
     <tr><td>ifDuplex</td><td>full/half</td></tr>
-   
-	<tr><th>Attributes</th><th>Values</th></tr>
+  	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>ifSpeed</td><td>interface speed in a mbit number</td></tr>
     <tr><td>ifAlias</td><td>the interface description</td></tr>
     <tr><td>ifDescr</td><td>Location of the interface, (blade, slot, etc)</td></tr>
@@ -207,8 +206,7 @@ For an up-to-date list see the os.inc.php in your includes-definition directory 
     <tr><td>mempool_free</td><td></td></tr>
     <tr><td>mempool_perc</td><td>0-100 percentage</td></tr>
     <tr><td>mempool_used</td><td></td></tr>
-   
-	<tr><th>Attributes</th><th>Values</th></tr>
+   	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>mempool_descr</td><td></td></tr>
     <tr><td>mempool_mib</td><td></td></tr>
     <tr><td>mempool_index</td><td>just index in the table, not really useful for alerting, unless you know what you're doing, and what you want to get out of it</td></tr>
@@ -219,8 +217,7 @@ For an up-to-date list see the os.inc.php in your includes-definition directory 
 <table>
 	<tr><th>Metrics</th><th>Values</th></tr>
     <tr><td>processor_usage</td><td>0-100 percentage</td></tr>
-   
-	<tr><th>Attributes</th><th>Values</th></tr>
+   	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>processor_descr</td><td></td></tr>
     <tr><td>processor_type</td><td></td></tr>
     <tr><td>processor_oid</td><td></td></tr>
