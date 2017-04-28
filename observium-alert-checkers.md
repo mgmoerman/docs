@@ -1,7 +1,7 @@
 [link_obs_alert_checker]: http://www.observium.org/docs/alert_checker/
 [link_obs_attribs_metrics]: http://www.observium.org/docs/attribs_metrics/
 
-##Useful Observium Alert Checkers
+## Useful Observium Alert Checkers
 
 
 Observium straight out of the SVN repository doesn't come with alert-checkers, which is 
@@ -141,7 +141,7 @@ The following is a set of very useful alert checkers:
 
 
 
-###Per entity overview of Attributes , Metrics and their values (if any)
+### Per entity overview of Attributes , Metrics and their values (if any)
 
 This is my own interpretation of the metrics & attributes, Adam Armstrong has now (writing this on 31 july 2015) updated the documentation on the observium website as well: [http://www.observium.org/docs/attribs_metrics/][link_obs_attribs_metrics]
 
