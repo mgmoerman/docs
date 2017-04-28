@@ -144,7 +144,7 @@ The following is a set of very useful alert checkers:
 
 ### Per entity overview of Attributes , Metrics and their values (if any)
 
-This is my own interpretation of the metrics & attributes, Adam Armstrong has now (writing this on 31 july 2015) updated the documentation on the observium website as well: [http://http://docs.observium.org/entities/][link_obs_attribs_metrics]
+This is my own interpretation of the metrics & attributes, Adam Armstrong has now (writing this on 31 july 2015) updated the documentation on the observium website as well: [http://docs.observium.org/entities/][link_obs_attribs_metrics]
 
 
 #### Device
