@@ -22,7 +22,7 @@ Let's go through the steps that are involved to actually create/add an alert che
 #### Entity type
 First of all when you create an alert,you'll need to pick the 'entity' type for what you are building the alert for. An entity type is nothing more than a "thing" for which you would like to see alerts.
 
-These are the ones that are available as of 22/12/2015:
+This document assumes you are running the latest version of Observium
 
 * Device
 * Memory
