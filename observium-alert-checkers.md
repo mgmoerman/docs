@@ -324,7 +324,7 @@ For an up-to-date list see /opt/observium/includes/definitions/os.inc.php</td></
     <tr><td>vsvr_bps_out</td><td>bits/sec out</td></tr>
     <tr><td>vsvr_conn_client</td><td>number of client connections</td></tr>
     <tr><td>vsvr_conn_server</td><td>number of server connections</td></tr>
-    <tr><td>vsvr_health</td><td>The percentage of services in state UP that are bound to this vserver</td></tr>
+    <tr><td>vsvr_health</td><td>the percentage of services in state UP that are bound to this vserver</td></tr>
 	<tr><th>Attributes</th><th>Values</th></tr>
     <tr><td>vsvr_name</td><td>tame of the vserver - this matches vsvr_fullname except when longer then 32chars, it becomes a randomstring</td></tr>
     <tr><td>vsvr_fullname</td><td>name of the vserver</td></tr>
