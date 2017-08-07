@@ -1,4 +1,4 @@
-##How to configure 1 minute polling on Observium
+## How to configure 1 minute polling on Observium
 
 
 1 Minute polling for Observium, quite an interesting and useful feature if you ask me. Especially with large capacity interfaces such as 25/40/100gbit interfaces, there’s tiny differences which could be interesting to spot, and you just can’t see those when you are using 5 minute polling. Another interesting used case for example are your uplinks, and your core links in your network.
@@ -7,7 +7,7 @@ By default Observium is not setup to do this, and it requires a couple of change
 
 First before we get into the details on how to actually do this there are a couple of things you’ll need/want to know:
 
-#####<span style="color:red">N E E D&nbsp;&nbsp;&nbsp;T O&nbsp;&nbsp;&nbsp;K N O W :</span>
+##### <span style="color:red">N E E D&nbsp;&nbsp;&nbsp;T O&nbsp;&nbsp;&nbsp;K N O W :</span>
 
 * These changes are an all or nothing setup. Meaning, all your things will be polled on a 1 minute interval, that is sensors, ports, cpu’s, memory, everything. No possibility to do just a couple of things on 1 minute intervals
 * You NEED to do this with an empty RRD directory / new installation, as RRD files need to be recreated with the proper ‘time brackets’ configured in them
@@ -19,7 +19,7 @@ First before we get into the details on how to actually do this there are a coup
 
 
 
-####Configuration
+#### Configuration
 Ok, let’s see how to configure this:
 
 In the default configuration thats deployed once you have downloaded it, the RRD settings are configured for:
