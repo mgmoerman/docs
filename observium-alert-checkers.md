@@ -40,6 +40,7 @@ This document assumes you are running the latest version of Observium
 * P2P Radio
 * WiFi WLAN **
 * Wifi_radio **
+* Custom OID
 
 ###### * Netscaler Servicegroup entities are not merged into the codebase yet, but once they are, the details for attributes & metrics are as described below
 
@@ -376,6 +377,15 @@ For an up-to-date list see the os.inc.php in your includes-definition directory 
     <tr><td>svc_port</td><td></td></tr>
     <tr><td>svc_type</td><td></td></tr>
 </table>
+
+####Custom OID 
+
+<table>
+	<tr><th>Metrics</th><th>Values</th></tr>
+    <tr><td>x</td><td>x</td></tr>
+	<tr><th>Attributes</th><th>Values</th></tr>
+    <tr><td>x</td><td>x</td></tr>
+  </table>
 
 
 
